@@ -74,7 +74,7 @@
     const root = get_current_component();
     const attributes = get_attributes(root.attributes);
     const shadow_root = root.shadowRoot;
-    window.attrs = root.attributes;
+
     let callback_identifier;
     let Component;
     let default_slot;
@@ -107,7 +107,6 @@
                 _component = null;
             }
 
-            console.log({attributes});
             _component = new Component({
                 target: shadow_root,
                 props: {
