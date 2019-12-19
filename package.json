@@ -1,0 +1,34 @@
+{
+    "name": "svelte-window-component",
+    "version": "0.0.1",
+    "description": "Simple Svelte v3 Web Component for dynamically loading Svelte Components from a register",
+    "keywords": [
+        "svelte",
+        "web-components"
+    ],
+    "main": "index",
+    "files": [
+        "dist"
+    ],
+    "author": "novacbn",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/novacbn/svelte-window-component"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=6.0.0"
+    },
+    "scripts": {
+        "build:lib": "npm run build:lib:browser",
+        "build:lib:browser": "parcel build ./src/WindowComponent.svelte --experimental-scope-hoisting --global WindowComponent --out-file ./dist/svelte-window-component.umd.js"
+    },
+    "dependencies": {
+        "svelte": "^3.16.5"
+    },
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4",
+        "parcel-plugin-svelte": "^4.0.5",
+        "prettier": "^1.14.3"
+    }
+}
