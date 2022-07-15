@@ -24,7 +24,7 @@
         "build:lib:browser": "parcel build ./src/WindowComponent.svelte --experimental-scope-hoisting --global WindowComponent --out-file ./dist/svelte-window-component.umd.js"
     },
     "dependencies": {
-        "svelte": "^3.16.5"
+        "svelte": "^3.49.0"
     },
     "devDependencies": {
         "parcel-bundler": "^1.12.4",
